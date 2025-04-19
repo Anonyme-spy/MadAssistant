@@ -1,0 +1,77 @@
+{
+  "1": {
+    "nom": "Casernement Central",
+    "localisation": "Antananarivo, Analakely",
+    "telephone": "+261 34 12 345 01"
+  },
+  "2": {
+    "nom": "Caserne Anosy",
+    "localisation": "Antananarivo, Anosy",
+    "telephone": "+261 33 23 234 56"
+  },
+  "3": {
+    "nom": "Caserne Mahamasina",
+    "localisation": "Antananarivo, Mahamasina",
+    "telephone": "+261 32 45 678 90"
+  },
+  "4": {
+    "nom": "Caserne Ambohimanarina",
+    "localisation": "Antananarivo, Ambohimanarina",
+    "telephone": "+261 38 76 543 21"
+  },
+  "5": {
+    "nom": "Caserne Itaosy",
+    "localisation": "Antananarivo, Itaosy",
+    "telephone": "+261 34 98 765 43"
+  },
+  "6": {
+    "nom": "Caserne Andavamamba",
+    "localisation": "Antananarivo, Andavamamba",
+    "telephone": "+261 32 11 223 44"
+  },
+  "7": {
+    "nom": "Caserne Tanjombato",
+    "localisation": "Antananarivo, Tanjombato",
+    "telephone": "+261 33 45 678 21"
+  },
+  "8": {
+    "nom": "Caserne Ampefiloha",
+    "localisation": "Antananarivo, Ampefiloha",
+    "telephone": "+261 34 22 345 78"
+  },
+  "9": {
+    "nom": "Caserne Tsaralalàna",
+    "localisation": "Antananarivo, Tsaralalàna",
+    "telephone": "+261 38 65 432 19"
+  },
+  "10": {
+    "nom": "Caserne Mandroseza",
+    "localisation": "Antananarivo, Mandroseza",
+    "telephone": "+261 32 76 543 21"
+  },
+  "11": {
+    "nom": "Caserne Anjanahary",
+    "localisation": "Antananarivo, Anjanahary",
+    "telephone": "+261 33 89 210 65"
+  },
+  "12": {
+    "nom": "Caserne 67Ha",
+    "localisation": "Antananarivo, 67Ha",
+    "telephone": "+261 34 54 321 76"
+  },
+  "13": {
+    "nom": "Caserne Andohalo",
+    "localisation": "Antananarivo, Andohalo",
+    "telephone": "+261 34 12 876 54"
+  },
+  "14": {
+    "nom": "Caserne Ambohipotsy",
+    "localisation": "Antananarivo, Ambohipotsy",
+    "telephone": "+261 32 45 678 90"
+  },
+  "15": {
+    "nom": "Caserne Ankazomanga",
+    "localisation": "Antananarivo, Ankazomanga",
+    "telephone": "+261 33 22 345 78"
+  }
+}

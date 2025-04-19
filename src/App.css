@@ -1,0 +1,7 @@
+a.active {
+    color: whitesmoke;
+}
+
+a.active span {
+    color: black;
+}

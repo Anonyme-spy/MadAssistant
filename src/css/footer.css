@@ -1,0 +1,17 @@
+li > p {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+li > p:hover {
+    cursor: default;
+}
+
+ul > li > a {
+    font-weight: normal !important;
+    text-decoration: none;
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity, 1)) /* #9ca3af */;
+}

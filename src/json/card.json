@@ -1,0 +1,14 @@
+{
+  "sante": {
+    "title": "Santé",
+    "description": "Contactez les services de santé rapidement."
+  },
+  "securite": {
+    "title": "Sécurité",
+    "description": "Appelez les forces de l'ordre en un clic."
+  },
+  "incendie": {
+    "title": "Incendie",
+    "description": "Accédez rapidement aux pompiers."
+  }
+}

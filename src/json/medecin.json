@@ -1,0 +1,114 @@
+{
+  "1": {
+    "nom": "Dr. Jean Rakoto",
+    "localisation": "Antananarivo, Hôpital Manarapenitra",
+    "clinique": "Clinique Andohalo",
+    "retraite": false,
+    "telephone": "+261 34 12 345 67",
+    "instructions": "En cas d'urgence, appeler immédiatement le SAMU au 117."
+  },
+  "2": {
+    "nom": "Dr. Marie Rasoanirina",
+    "localisation": "Toamasina, Hôpital Be",
+    "clinique": "Clinique Tamatave",
+    "retraite": false,
+    "telephone": "+261 33 22 987 65",
+    "instructions": "En cas de détresse respiratoire, se rendre à la clinique en urgence."
+  },
+  "3": {
+    "nom": "Dr. Hery Mamy",
+    "localisation": "Antananarivo, Hôpital de la Réunion",
+    "clinique": "Clinique de la Réunion",
+    "retraite": false,
+    "telephone": "+261 32 45 678 12",
+    "instructions": "Consulter en urgence pour toute chirurgie abdominale."
+  },
+  "4": {
+    "nom": "Dr. Fanja Rabemananjara",
+    "localisation": "Antananarivo, Hôpital Befelatanana",
+    "clinique": "Clinique Befelatanana",
+    "retraite": false,
+    "telephone": "+261 34 56 789 23",
+    "instructions": "En cas de diabète, consulter rapidement."
+  },
+  "5": {
+    "nom": "Dr. Lova Razafindrabe",
+    "localisation": "Antananarivo, Hôpital de l'Université",
+    "clinique": "Clinique universitaire",
+    "retraite": false,
+    "telephone": "+261 33 22 111 56",
+    "instructions": "Éviter de fumer avant toute consultation."
+  },
+  "6": {
+    "nom": "Dr. Naina Raharivelo",
+    "localisation": "Antananarivo, Hôpital Ambatolampy",
+    "clinique": "Clinique Ambatolampy",
+    "retraite": false,
+    "telephone": "+261 34 67 890 45",
+    "instructions": "Évitez les aliments gras avant la consultation."
+  },
+  "7": {
+    "nom": "Dr. Soa Rajoelina",
+    "localisation": "Antananarivo, Hôpital Miandrivazo",
+    "clinique": "Clinique Miandrivazo",
+    "retraite": false,
+    "telephone": "+261 32 33 444 55",
+    "instructions": "Consulter pour toute douleur persistante."
+  },
+  "8": {
+    "nom": "Dr. Aina Raveloson",
+    "localisation": "Antananarivo, Hôpital Moramanga",
+    "clinique": "Clinique Moramanga",
+    "retraite": false,
+    "telephone": "+261 34 56 999 12",
+    "instructions": "Prévoir une prise de sang avant la consultation."
+  },
+  "9": {
+    "nom": "Dr. Mamy Ralison",
+    "localisation": "Antananarivo, Hôpital Ikopa",
+    "clinique": "Clinique Ikopa",
+    "retraite": false,
+    "telephone": "+261 32 44 555 88",
+    "instructions": "Pour toute chirurgie orthopédique, prévoir une radiographie."
+  },
+  "10": {
+    "nom": "Dr. Hélène Ravelojaona",
+    "localisation": "Antananarivo, Hôpital Ambohimanarina",
+    "clinique": "Clinique Ambohimanarina",
+    "retraite": false,
+    "telephone": "+261 34 56 789 67",
+    "instructions": "En cas de problèmes cardiovasculaires, consulter immédiatement."
+  },
+  "11": {
+    "nom": "Dr. Vola Rina",
+    "localisation": "Antananarivo, Hôpital Anosizato",
+    "clinique": "Clinique Anosizato",
+    "retraite": false,
+    "telephone": "+261 33 22 345 12",
+    "instructions": "Eviter les efforts physiques avant consultation."
+  },
+  "12": {
+    "nom": "Dr. Tahina Rajo",
+    "localisation": "Antananarivo, Hôpital Vohémar",
+    "clinique": "Clinique Vohémar",
+    "retraite": false,
+    "telephone": "+261 38 22 345 67",
+    "instructions": "Prévoir un suivi pour les maladies chroniques."
+  },
+  "13": {
+    "nom": "Dr. Jean Nirina",
+    "localisation": "Antananarivo, Hôpital Ivato",
+    "clinique": "Clinique Ivato",
+    "retraite": false,
+    "telephone": "+261 34 56 889 34",
+    "instructions": "Consultation en cardiologie, éviter de manger avant."
+  },
+  "14": {
+    "nom": "Dr. Harisoa Rabearivelo",
+    "localisation": "Antananarivo, Hôpital Tsaralalana",
+    "clinique": "Clinique Tsaralalana",
+    "retraite": false,
+    "telephone": "+261 33 23 456 78",
+    "instructions": "Prévoir une échographie avant la consultation."
+  }
+}

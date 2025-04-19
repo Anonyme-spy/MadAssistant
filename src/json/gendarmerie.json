@@ -1,0 +1,77 @@
+{
+  "1": {
+    "nom": "Brigade Centrale",
+    "localisation": "Antananarivo, Analakely",
+    "telephone": "+261 34 12 345 67"
+  },
+  "2": {
+    "nom": "Brigade de Gendarmerie Mahamasina",
+    "localisation": "Antananarivo, Mahamasina",
+    "telephone": "+261 33 22 987 65"
+  },
+  "3": {
+    "nom": "Brigade Ambohimanarina",
+    "localisation": "Antananarivo, Ambohimanarina",
+    "telephone": "+261 32 78 654 32"
+  },
+  "4": {
+    "nom": "Brigade Tsaralalàna",
+    "localisation": "Antananarivo, Tsaralalàna",
+    "telephone": "+261 34 56 789 10"
+  },
+  "5": {
+    "nom": "Brigade 67Ha",
+    "localisation": "Antananarivo, 67Ha",
+    "telephone": "+261 38 90 123 45"
+  },
+  "6": {
+    "nom": "Brigade Andavamamba",
+    "localisation": "Antananarivo, Andavamamba",
+    "telephone": "+261 32 44 556 78"
+  },
+  "7": {
+    "nom": "Brigade Anosy",
+    "localisation": "Antananarivo, Anosy",
+    "telephone": "+261 34 21 432 10"
+  },
+  "8": {
+    "nom": "Brigade Itaosy",
+    "localisation": "Antananarivo, Itaosy",
+    "telephone": "+261 33 45 678 90"
+  },
+  "9": {
+    "nom": "Brigade Ampefiloha",
+    "localisation": "Antananarivo, Ampefiloha",
+    "telephone": "+261 34 98 765 43"
+  },
+  "10": {
+    "nom": "Brigade Ambanidia",
+    "localisation": "Antananarivo, Ambanidia",
+    "telephone": "+261 32 56 432 19"
+  },
+  "11": {
+    "nom": "Brigade Andohalo",
+    "localisation": "Antananarivo, Andohalo",
+    "telephone": "+261 38 12 876 54"
+  },
+  "12": {
+    "nom": "Brigade Ankazomanga",
+    "localisation": "Antananarivo, Ankazomanga",
+    "telephone": "+261 34 22 345 78"
+  },
+  "13": {
+    "nom": "Brigade Anjanahary",
+    "localisation": "Antananarivo, Anjanahary",
+    "telephone": "+261 32 65 987 21"
+  },
+  "14": {
+    "nom": "Brigade Mandroseza",
+    "localisation": "Antananarivo, Mandroseza",
+    "telephone": "+261 33 89 210 65"
+  },
+  "15": {
+    "nom": "Brigade Tanjombato",
+    "localisation": "Antananarivo, Tanjombato",
+    "telephone": "+261 38 54 321 76"
+  }
+}

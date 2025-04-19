@@ -1,0 +1,77 @@
+{
+  "1": {
+    "nom": "Sage-Femme Malala",
+    "localisation": "Antananarivo, Analakely",
+    "telephone": "+261 34 12 345 01"
+  },
+  "2": {
+    "nom": "Sage-Femme Zina",
+    "localisation": "Antananarivo, Anosy",
+    "telephone": "+261 33 23 234 56"
+  },
+  "3": {
+    "nom": "Sage-Femme Noro",
+    "localisation": "Antananarivo, Mahamasina",
+    "telephone": "+261 32 45 678 90"
+  },
+  "4": {
+    "nom": "Sage-Femme Mamy",
+    "localisation": "Antananarivo, Ambohimanarina",
+    "telephone": "+261 38 76 543 21"
+  },
+  "5": {
+    "nom": "Sage-Femme Lalao",
+    "localisation": "Antananarivo, Itaosy",
+    "telephone": "+261 34 98 765 43"
+  },
+  "6": {
+    "nom": "Sage-Femme Soa",
+    "localisation": "Antananarivo, Andavamamba",
+    "telephone": "+261 32 11 223 44"
+  },
+  "7": {
+    "nom": "Sage-Femme Vola",
+    "localisation": "Antananarivo, Tanjombato",
+    "telephone": "+261 33 45 678 21"
+  },
+  "8": {
+    "nom": "Sage-Femme Manitra",
+    "localisation": "Antananarivo, Ampefiloha",
+    "telephone": "+261 34 22 345 78"
+  },
+  "9": {
+    "nom": "Sage-Femme Hoby",
+    "localisation": "Antananarivo, Tsaralalàna",
+    "telephone": "+261 38 65 432 19"
+  },
+  "10": {
+    "nom": "Sage-Femme Hasina",
+    "localisation": "Antananarivo, Mandroseza",
+    "telephone": "+261 32 76 543 21"
+  },
+  "11": {
+    "nom": "Sage-Femme Natacha",
+    "localisation": "Antananarivo, 67Ha",
+    "telephone": "+261 34 54 321 76"
+  },
+  "12": {
+    "nom": "Sage-Femme Lova",
+    "localisation": "Antananarivo, Andohalo",
+    "telephone": "+261 34 12 876 54"
+  },
+  "13": {
+    "nom": "Sage-Femme Fara",
+    "localisation": "Antananarivo, Ambohipotsy",
+    "telephone": "+261 32 45 678 90"
+  },
+  "14": {
+    "nom": "Sage-Femme Tahiry",
+    "localisation": "Antananarivo, Ankazomanga",
+    "telephone": "+261 33 22 345 78"
+  },
+  "15": {
+    "nom": "Sage-Femme Hery",
+    "localisation": "Antananarivo, Anjanahary",
+    "telephone": "+261 33 89 210 65"
+  }
+}

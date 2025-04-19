@@ -1,0 +1,62 @@
+{
+  "medical": {
+    "title": "Professeur Médicale",
+    "p": "Consultez un professeur médicale rapidement.",
+    "i": "user-doctor",
+    "link": "medical"
+  },
+  "Avocat": {
+    "title": "Avocat",
+    "p": "Obtenez des conseils juridiques en un clic.",
+    "i": "gavel",
+    "link": "avocat"
+  },
+  "Ambulance": {
+    "title": "Ambulance",
+    "p": "Appelez une ambulance immédiatement.",
+    "i": "ambulance",
+    "link": "ambulance"
+  },
+  "Hospital": {
+    "title": "Hôpital",
+    "p": "Trouvez un Hôpital proche de vous.",
+    "i": "hospital",
+    "link": "hospital"
+  },
+  "Police": {
+    "title": "Police",
+    "p": "Appelez la police en un clic.",
+    "i": "handcuffs",
+    "link": "police"
+  },
+  "Gendarmerie": {
+    "title": "Gendarmerie",
+    "p": "Contactez la gendarmerie rapidement.",
+    "i": "balance-scale",
+    "link": "gendarmerie"
+  },
+  "Brigade": {
+    "title": "Les Brigades Criminelles",
+    "p": "Contactez les brigades criminelles rapidement.",
+    "i": "user-secret",
+    "link": "brigade"
+  },
+  "Fire": {
+    "title": "Pompiers",
+    "p": "Accédez rapidement aux pompiers.",
+    "i": "fire-extinguisher",
+    "link": "pompier"
+  },
+  "Sage-femme": {
+    "title": "Sage-femme",
+    "p": "Trouver une sage-femme rapidement.",
+    "i": "user-nurse",
+    "link": "nurse"
+  },
+  "Veterinary": {
+    "title": "Les Vétérinaires",
+    "p": "Trouvez un vétérinaire pour votre animal de compagnie.",
+    "i": "shield-dog",
+    "link": "veterinaire"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "1": {
+    "nom": "Me. Alain Randrianasolo",
+    "specialisation": "Droit des affaires",
+    "localisation": "Antananarivo, Cabinet Randrianasolo & Associés",
+    "telephone": "+261 34 56 789 01",
+    "instructions": "Disponible sur rendez-vous uniquement."
+  },
+  "2": {
+    "nom": "Me. Sophie Razafindrabe",
+    "specialisation": "Droit de la famille",
+    "localisation": "Toamasina, Cabinet Juridica",
+    "telephone": "+261 33 22 987 65",
+    "instructions": "Consultation en ligne disponible."
+  },
+  "3": {
+    "nom": "Me. Lova Ranjato",
+    "specialisation": "Droit pénal",
+    "localisation": "Antananarivo, Cabinet Ranjato",
+    "telephone": "+261 33 44 556 78",
+    "instructions": "Consultation en personne uniquement."
+  },
+  "4": {
+    "nom": "Me. Nadia Ramanantsoa",
+    "specialisation": "Droit immobilier",
+    "localisation": "Antananarivo, Cabinet Immobilis",
+    "telephone": "+261 34 23 456 89",
+    "instructions": "Rendez-vous sur demande."
+  },
+  "5": {
+    "nom": "Me. Stéphane Rabe",
+    "specialisation": "Droit commercial",
+    "localisation": "Antananarivo, Cabinet Rabe & Associés",
+    "telephone": "+261 32 12 345 67",
+    "instructions": "Disponible du lundi au vendredi."
+  },
+  "6": {
+    "nom": "Me. Rina Rasoanaivo",
+    "specialisation": "Droit international",
+    "localisation": "Antananarivo, Cabinet Rasoanaivo",
+    "telephone": "+261 34 54 678 90",
+    "instructions": "Réservé aux cas internationaux."
+  },
+  "7": {
+    "nom": "Me. Manitra Raza",
+    "specialisation": "Droit administratif",
+    "localisation": "Antananarivo, Cabinet Manitra",
+    "telephone": "+261 32 44 332 11",
+    "instructions": "Consultation en ligne possible."
+  },
+  "8": {
+    "nom": "Me. Béatrice Rakoto",
+    "specialisation": "Droit des contrats",
+    "localisation": "Antananarivo, Cabinet Béatrice Rakoto",
+    "telephone": "+261 33 11 223 44",
+    "instructions": "Rendez-vous sur rendez-vous."
+  },
+  "9": {
+    "nom": "Me. Tiana Andrianarivo",
+    "specialisation": "Droit des successions",
+    "localisation": "Antananarivo, Cabinet Tiana",
+    "telephone": "+261 33 55 667 88",
+    "instructions": "Consultation en urgence."
+  },
+  "10": {
+    "nom": "Me. Mirana Ravonimpaina",
+    "specialisation": "Droit des sociétés",
+    "localisation": "Antananarivo, Cabinet Ravonimpaina",
+    "telephone": "+261 34 76 889 12",
+    "instructions": "Réservé aux grandes entreprises."
+  },
+  "11": {
+    "nom": "Me. Jean-Louis Rakotovao",
+    "specialisation": "Droit fiscal",
+    "localisation": "Antananarivo, Cabinet Rakotovao",
+    "telephone": "+261 34 67 890 11",
+    "instructions": "Consultation sur rendez-vous."
+  },
+  "12": {
+    "nom": "Me. Hélène Raharimanana",
+    "specialisation": "Droit des victimes",
+    "localisation": "Antananarivo, Cabinet Hélène",
+    "telephone": "+261 32 11 223 45",
+    "instructions": "Consultation gratuite pour les victimes."
+  },
+  "13": {
+    "nom": "Me. Vola Ramanandraibe",
+    "specialisation": "Droit de la propriété intellectuelle",
+    "localisation": "Antananarivo, Cabinet Vola",
+    "telephone": "+261 34 44 556 78",
+    "instructions": "Disponible pour les cas de contrefaçon."
+  },
+  "14": {
+    "nom": "Me. Mamy Ranto",
+    "specialisation": "Droit de la protection sociale",
+    "localisation": "Antananarivo, Cabinet Mamy",
+    "telephone": "+261 33 77 889 90",
+    "instructions": "Consultation pour les questions de sécurité sociale."
+  },
+  "15": {
+    "nom": "Me. Lalao Randrianarivony",
+    "specialisation": "Droit administratif",
+    "localisation": "Antananarivo, Cabinet Lalao",
+    "telephone": "+261 32 33 444 56",
+    "instructions": "Consultation en ligne possible."
+  }
+}

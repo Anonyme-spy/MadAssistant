@@ -1,0 +1,77 @@
+{
+  "1": {
+    "nom": "Hôpital HJRA",
+    "localisation": "Antananarivo, Ampefiloha",
+    "telephone": "+261 34 12 345 67"
+  },
+  "2": {
+    "nom": "Hôpital Joseph Raseta Befelatanana",
+    "localisation": "Antananarivo, Befelatanana",
+    "telephone": "+261 33 22 987 65"
+  },
+  "3": {
+    "nom": "Hôpital Militaire Soavinandriana",
+    "localisation": "Antananarivo, Soavinandriana",
+    "telephone": "+261 32 78 654 32"
+  },
+  "4": {
+    "nom": "Hôpital Mère-Enfant Tsaralalàna",
+    "localisation": "Antananarivo, Tsaralalàna",
+    "telephone": "+261 34 56 789 10"
+  },
+  "5": {
+    "nom": "Hôpital Ravoahangy Andrianavalona",
+    "localisation": "Antananarivo, Andrianavalona",
+    "telephone": "+261 38 90 123 45"
+  },
+  "6": {
+    "nom": "Hôpital Analakely",
+    "localisation": "Antananarivo, Analakely",
+    "telephone": "+261 32 44 556 78"
+  },
+  "7": {
+    "nom": "Hôpital Manarapenitra Anosiala",
+    "localisation": "Antananarivo, Anosiala",
+    "telephone": "+261 34 21 432 10"
+  },
+  "8": {
+    "nom": "Hôpital Universitaire Befelatanana",
+    "localisation": "Antananarivo, Befelatanana",
+    "telephone": "+261 33 45 678 90"
+  },
+  "9": {
+    "nom": "Hôpital Itaosy",
+    "localisation": "Antananarivo, Itaosy",
+    "telephone": "+261 34 98 765 43"
+  },
+  "10": {
+    "nom": "Hôpital Ambohimiandra",
+    "localisation": "Antananarivo, Ambohimiandra",
+    "telephone": "+261 32 56 432 19"
+  },
+  "11": {
+    "nom": "Hôpital Ambanidia",
+    "localisation": "Antananarivo, Ambanidia",
+    "telephone": "+261 38 12 876 54"
+  },
+  "12": {
+    "nom": "Hôpital Andohalo",
+    "localisation": "Antananarivo, Andohalo",
+    "telephone": "+261 34 22 345 78"
+  },
+  "13": {
+    "nom": "Hôpital Anosy",
+    "localisation": "Antananarivo, Anosy",
+    "telephone": "+261 32 65 987 21"
+  },
+  "14": {
+    "nom": "Hôpital Mandroseza",
+    "localisation": "Antananarivo, Mandroseza",
+    "telephone": "+261 33 89 210 65"
+  },
+  "15": {
+    "nom": "Hôpital Mahamasina",
+    "localisation": "Antananarivo, Mahamasina",
+    "telephone": "+261 38 54 321 76"
+  }
+}
