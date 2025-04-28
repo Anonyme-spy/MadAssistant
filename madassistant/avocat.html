@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadAssistant - Avocat</title>
+    <link rel="stylesheet" href="autre2cat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="logo-removebg-preview.png" alt="Logo MadAssistant" class="logo">
+                <h1 class="mb-0">MadAssistant</h1>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="catégo.html" class="nav-link text-white">Retour</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="avocats" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Liste des avocats</h2>
+            <div class="row" id="avocats-container">
+                <!-- Les avocats seront affichés ici dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 MadAssistant. Tous droits réservés.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour afficher les détails d'un avocat -->
+    <div class="modal fade" id="avocatModal" tabindex="-1" aria-labelledby="avocatModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="avocatModalLabel">Détails de l'avocat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="avocat-details">
+                    <!-- Détails de l'avocat -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const avocats = [
+            { nom: "Me. Alain Randrianasolo", specialisation: "Droit des affaires", localisation: "Antananarivo, Cabinet Randrianasolo & Associés", telephone: "+261 34 56 789 01", instructions: "Disponible sur rendez-vous uniquement." },
+            { nom: "Me. Sophie Razafindrabe", specialisation: "Droit de la famille", localisation: "Toamasina, Cabinet Juridica", telephone: "+261 33 22 987 65", instructions: "Consultation en ligne disponible." },
+            { nom: "Me. Lova Ranjato", specialisation: "Droit pénal", localisation: "Antananarivo, Cabinet Ranjato", telephone: "+261 33 44 556 78", instructions: "Consultation en personne uniquement." },
+            { nom: "Me. Nadia Ramanantsoa", specialisation: "Droit immobilier", localisation: "Antananarivo, Cabinet Immobilis", telephone: "+261 34 23 456 89", instructions: "Rendez-vous sur demande." },
+            { nom: "Me. Stéphane Rabe", specialisation: "Droit commercial", localisation: "Antananarivo, Cabinet Rabe & Associés", telephone: "+261 32 12 345 67", instructions: "Disponible du lundi au vendredi." },
+            { nom: "Me. Rina Rasoanaivo", specialisation: "Droit international", localisation: "Antananarivo, Cabinet Rasoanaivo", telephone: "+261 34 54 678 90", instructions: "Réservé aux cas internationaux." },
+            { nom: "Me. Manitra Raza", specialisation: "Droit administratif", localisation: "Antananarivo, Cabinet Manitra", telephone: "+261 32 44 332 11", instructions: "Consultation en ligne possible." },
+            { nom: "Me. Béatrice Rakoto", specialisation: "Droit des contrats", localisation: "Antananarivo, Cabinet Béatrice Rakoto", telephone: "+261 33 11 223 44", instructions: "Rendez-vous sur rendez-vous." },
+            { nom: "Me. Tiana Andrianarivo", specialisation: "Droit des successions", localisation: "Antananarivo, Cabinet Tiana", telephone: "+261 33 55 667 88", instructions: "Consultation en urgence." },
+            { nom: "Me. Mirana Ravonimpaina", specialisation: "Droit des sociétés", localisation: "Antananarivo, Cabinet Ravonimpaina", telephone: "+261 34 76 889 12", instructions: "Réservé aux grandes entreprises." },
+            { nom: "Me. Jean-Louis Rakotovao", specialisation: "Droit fiscal", localisation: "Antananarivo, Cabinet Rakotovao", telephone: "+261 34 67 890 11", instructions: "Consultation sur rendez-vous." },
+            { nom: "Me. Hélène Raharimanana", specialisation: "Droit des victimes", localisation: "Antananarivo, Cabinet Hélène", telephone: "+261 32 11 223 45", instructions: "Consultation gratuite pour les victimes." },
+            { nom: "Me. Vola Ramanandraibe", specialisation: "Droit de la propriété intellectuelle", localisation: "Antananarivo, Cabinet Vola", telephone: "+261 34 44 556 78", instructions: "Disponible pour les cas de contrefaçon." },
+            { nom: "Me. Mamy Ranto", specialisation: "Droit de la protection sociale", localisation: "Antananarivo, Cabinet Mamy", telephone: "+261 33 77 889 90", instructions: "Consultation pour les questions de sécurité sociale." },
+            { nom: "Me. Lalao Randrianarivony", specialisation: "Droit administratif", localisation: "Antananarivo, Cabinet Lalao", telephone: "+261 32 33 444 56", instructions: "Consultation en ligne possible." }
+        ];
+
+        function afficherAvocats() {
+            const container = document.getElementById("avocats-container");
+            container.innerHTML = "";
+            avocats.forEach((avocat, index) => {
+                const card = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-gavel fa-2x mb-3"></i>
+                                <h3 class="card-title">${avocat.nom}</h3>
+                                <p class="card-text">${avocat.specialisation}</p>
+                                <button class="btn btn-primary" onclick="afficherDetails(${index})">Voir détails</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        function afficherDetails(index) {
+            const avocat = avocats[index];
+            const details = `
+                <p><strong>Nom:</strong> ${avocat.nom}</p>
+                <p><strong>Spécialisation:</strong> ${avocat.specialisation}</p>
+                <p><strong>Localisation:</strong> ${avocat.localisation}</p>
+                <p><strong>Téléphone:</strong> ${avocat.telephone}</p>
+                <p><strong>Instructions:</strong> ${avocat.instructions}</p>
+            `;
+            document.getElementById("avocat-details").innerHTML = details;
+            $('#avocatModal').modal('show');
+        }
+
+        document.addEventListener("DOMContentLoaded", afficherAvocats);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

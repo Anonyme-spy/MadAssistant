@@ -1,0 +1,48 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+header {
+    background: linear-gradient(to bottom right, #007bff, #003c8f);
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+footer .text-center {
+    margin-top: 1rem;
+}
+
+.nav-item {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

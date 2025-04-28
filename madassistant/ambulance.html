@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadAssistant - Ambulances</title>
+    <link rel="stylesheet" href="autre2cat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="logo-removebg-preview.png" alt="Logo MadAssistant" class="logo">
+                <h1 class="mb-0">MadAssistant</h1>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="catégo.html" class="nav-link text-white">Retour</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="ambulances" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Liste des ambulances</h2>
+            <div class="row" id="ambulances-container">
+                <!-- Les ambulances seront affichées ici dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 MadAssistant. Tous droits réservés.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour afficher les détails d'une ambulance -->
+    <div class="modal fade" id="ambulanceModal" tabindex="-1" aria-labelledby="ambulanceModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ambulanceModalLabel">Détails de l'ambulance</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="ambulance-details">
+                    <!-- Détails de l'ambulance -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ambulances = [
+            {
+                nom: "Ambulance Urgence Plus",
+                localisation: "Antananarivo, Centre-ville",
+                telephone: "+261 34 12 345 67",
+                disponibilite: "24/7",
+                instructions: "Appeler en cas d'urgence médicale."
+            },
+            {
+                nom: "Ambulance Vita Soa",
+                localisation: "Toamasina, Quartier administratif",
+                telephone: "+261 33 22 987 65",
+                disponibilite: "7j/7",
+                instructions: "Disponible pour transport médicalisé longue distance."
+            },
+            {
+                nom: "Ambulance Rapide Secours",
+                localisation: "Mahajanga, Hôpital Principal",
+                telephone: "+261 32 78 654 32",
+                disponibilite: "24/7",
+                instructions: "Intervention rapide en cas d'accident."
+            },
+            {
+                nom: "Ambulance Aro Aina",
+                localisation: "Fianarantsoa, Centre médical Andohalo",
+                telephone: "+261 34 56 789 10",
+                disponibilite: "24h/24",
+                instructions: "Prise en charge des urgences vitales."
+            },
+            {
+                nom: "Ambulance Hazo Mamy",
+                localisation: "Antsirabe, Clinique Rasalama",
+                telephone: "+261 38 90 123 45",
+                disponibilite: "Du lundi au samedi",
+                instructions: "Spécialisée en soins d'urgence pédiatriques."
+            },
+            {
+                nom: "Ambulance Manarapenitra",
+                localisation: "Toliara, Hôpital Régional",
+                telephone: "+261 32 44 556 78",
+                disponibilite: "24h/24",
+                instructions: "Équipée pour les soins intensifs."
+            },
+            {
+                nom: "Ambulance Samu Madagascar",
+                localisation: "Diego-Suarez, Centre Médical Nord",
+                telephone: "+261 34 21 432 10",
+                disponibilite: "24/7",
+                instructions: "Assistance médicale et transport d'urgence."
+            }
+        ];
+
+        function afficherAmbulances() {
+            const container = document.getElementById("ambulances-container");
+            container.innerHTML = "";
+            ambulances.forEach((ambulance, index) => {
+                const card = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-ambulance fa-2x mb-3"></i>
+                                <h3 class="card-title">${ambulance.nom}</h3>
+                                <p class="card-text">${ambulance.localisation}</p>
+                                <button class="btn btn-primary" onclick="afficherDetails(${index})">Voir détails</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        function afficherDetails(index) {
+            const ambulance = ambulances[index];
+            const details = `
+                <p><strong>Nom:</strong> ${ambulance.nom}</p>
+                <p><strong>Localisation:</strong> ${ambulance.localisation}</p>
+                <p><strong>Téléphone:</strong> ${ambulance.telephone}</p>
+                <p><strong>Disponibilité:</strong> ${ambulance.disponibilite}</p>
+                <p><strong>Instructions:</strong> ${ambulance.instructions}</p>
+            `;
+            document.getElementById("ambulance-details").innerHTML = details;
+            $('#ambulanceModal').modal('show');
+        }
+
+        document.addEventListener("DOMContentLoaded", afficherAmbulances);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

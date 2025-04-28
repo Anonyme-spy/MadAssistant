@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadAssistant - Professeurs Médicaux</title>
+    <link rel="stylesheet" href="autre2cat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="logo-removebg-preview.png" alt="Logo MadAssistant" class="logo">
+                <h1 class="mb-0">MadAssistant</h1>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="catégo.html" class="nav-link text-white">Retour</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="professeurs" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Liste des Professeurs Médicaux</h2>
+            <div class="row" id="medecins-container">
+                <!-- Les médecins seront affichés ici dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 MadAssistant. Tous droits réservés.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour afficher les détails d'un médecin -->
+    <div class="modal fade" id="medecinModal" tabindex="-1" aria-labelledby="medecinModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="medecinModalLabel">Détails du Professeur Médical</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="medecin-details">
+                    <!-- Détails du médecin -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const medecins = [
+            { nom: "Dr. Jean Rakoto", localisation: "Antananarivo, Hôpital Manarapenitra", clinique: "Clinique Andohalo", retraite: false, telephone: "+261 34 12 345 67", instructions: "En cas d'urgence, appeler immédiatement le SAMU au 117." },
+            { nom: "Dr. Marie Rasoanirina", localisation: "Toamasina, Hôpital Be", clinique: "Clinique Tamatave", retraite: false, telephone: "+261 33 22 987 65", instructions: "En cas de détresse respiratoire, se rendre à la clinique en urgence." },
+            { nom: "Dr. Hery Mamy", localisation: "Antananarivo, Hôpital de la Réunion", clinique: "Clinique de la Réunion", retraite: false, telephone: "+261 32 45 678 12", instructions: "Consulter en urgence pour toute chirurgie abdominale." },
+            { nom: "Dr. Fanja Rabemananjara", localisation: "Antananarivo, Hôpital Befelatanana", clinique: "Clinique Befelatanana", retraite: false, telephone: "+261 34 56 789 23", instructions: "En cas de diabète, consulter rapidement." },
+            { nom: "Dr. Lova Razafindrabe", localisation: "Antananarivo, Hôpital de l'Université", clinique: "Clinique universitaire", retraite: false, telephone: "+261 33 22 111 56", instructions: "Éviter de fumer avant toute consultation." },
+            { nom: "Dr. Naina Raharivelo", localisation: "Antananarivo, Hôpital Ambatolampy", clinique: "Clinique Ambatolampy", retraite: false, telephone: "+261 34 67 890 45", instructions: "Évitez les aliments gras avant la consultation." },
+            { nom: "Dr. Soa Rajoelina", localisation: "Antananarivo, Hôpital Miandrivazo", clinique: "Clinique Miandrivazo", retraite: false, telephone: "+261 32 33 444 55", instructions: "Consulter pour toute douleur persistante." },
+            { nom: "Dr. Aina Raveloson", localisation: "Antananarivo, Hôpital Moramanga", clinique: "Clinique Moramanga", retraite: false, telephone: "+261 34 56 999 12", instructions: "Prévoir une prise de sang avant la consultation." },
+            { nom: "Dr. Mamy Ralison", localisation: "Antananarivo, Hôpital Ikopa", clinique: "Clinique Ikopa", retraite: false, telephone: "+261 32 44 555 88", instructions: "Pour toute chirurgie orthopédique, prévoir une radiographie." },
+            { nom: "Dr. Hélène Ravelojaona", localisation: "Antananarivo, Hôpital Ambohimanarina", clinique: "Clinique Ambohimanarina", retraite: false, telephone: "+261 34 56 789 67", instructions: "En cas de problèmes cardiovasculaires, consulter immédiatement." },
+            { nom: "Dr. Vola Rina", localisation: "Antananarivo, Hôpital Anosizato", clinique: "Clinique Anosizato", retraite: false, telephone: "+261 33 22 345 12", instructions: "Eviter les efforts physiques avant consultation." },
+            { nom: "Dr. Tahina Rajo", localisation: "Antananarivo, Hôpital Vohémar", clinique: "Clinique Vohémar", retraite: false, telephone: "+261 38 22 345 67", instructions: "Prévoir un suivi pour les maladies chroniques." },
+            { nom: "Dr. Jean Nirina", localisation: "Antananarivo, Hôpital Ivato", clinique: "Clinique Ivato", retraite: false, telephone: "+261 34 56 889 34", instructions: "Consultation en cardiologie, éviter de manger avant." },
+            { nom: "Dr. Harisoa Rabearivelo", localisation: "Antananarivo, Hôpital Tsaralalana", clinique: "Clinique Tsaralalana", retraite: false, telephone: "+261 33 23 456 78", instructions: "Prévoir une échographie avant la consultation." }
+        ];
+
+        function afficherMedecins() {
+            const container = document.getElementById("medecins-container");
+            container.innerHTML = "";
+            medecins.forEach((medecin, index) => {
+                const card = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-user-md fa-2x mb-3"></i>
+                                <h3 class="card-title">${medecin.nom}</h3>
+                                <p class="card-text">${medecin.localisation}</p>
+                                <button class="btn btn-primary" onclick="afficherDetails(${index})">Voir détails</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        function afficherDetails(index) {
+            const medecin = medecins[index];
+            const details = `
+                <p><strong>Nom:</strong> ${medecin.nom}</p>
+                <p><strong>Localisation:</strong> ${medecin.localisation}</p>
+                <p><strong>Clinique:</strong> ${medecin.clinique}</p>
+                <p><strong>Retraite:</strong> ${medecin.retraite ? "Oui" : "Non"}</p>
+                <p><strong>Téléphone:</strong> ${medecin.telephone}</p>
+                <p><strong>Instructions:</strong> ${medecin.instructions}</p>
+            `;
+            document.getElementById("medecin-details").innerHTML = details;
+            $('#medecinModal').modal('show');
+        }
+
+        document.addEventListener("DOMContentLoaded", afficherMedecins);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

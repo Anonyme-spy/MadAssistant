@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadAssistant - Sages-Femmes</title>
+    <link rel="stylesheet" href="autre2cat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="logo-removebg-preview.png" alt="Logo MadAssistant" class="logo">
+                <h1 class="mb-0">MadAssistant</h1>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="catégo.html" class="nav-link text-white">Retour</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="sages-femmes" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Liste des sages-femmes à Antananarivo</h2>
+            <div class="row" id="sages-femmes-container">
+                <!-- Les sages-femmes seront affichées ici dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 MadAssistant. Tous droits réservés.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const sagesFemmes = [
+            { nom: "Sage-Femme Malala", localisation: "Antananarivo, Analakely", telephone: "+261 34 12 345 01" },
+            { nom: "Sage-Femme Zina", localisation: "Antananarivo, Anosy", telephone: "+261 33 23 234 56" },
+            { nom: "Sage-Femme Noro", localisation: "Antananarivo, Mahamasina", telephone: "+261 32 45 678 90" },
+            { nom: "Sage-Femme Mamy", localisation: "Antananarivo, Ambohimanarina", telephone: "+261 38 76 543 21" },
+            { nom: "Sage-Femme Lalao", localisation: "Antananarivo, Itaosy", telephone: "+261 34 98 765 43" },
+            { nom: "Sage-Femme Soa", localisation: "Antananarivo, Andavamamba", telephone: "+261 32 11 223 44" },
+            { nom: "Sage-Femme Vola", localisation: "Antananarivo, Tanjombato", telephone: "+261 33 45 678 21" },
+            { nom: "Sage-Femme Manitra", localisation: "Antananarivo, Ampefiloha", telephone: "+261 34 22 345 78" },
+            { nom: "Sage-Femme Hoby", localisation: "Antananarivo, Tsaralalàna", telephone: "+261 38 65 432 19" },
+            { nom: "Sage-Femme Hasina", localisation: "Antananarivo, Mandroseza", telephone: "+261 32 76 543 21" },
+            { nom: "Sage-Femme Natacha", localisation: "Antananarivo, 67Ha", telephone: "+261 34 54 321 76" },
+            { nom: "Sage-Femme Lova", localisation: "Antananarivo, Andohalo", telephone: "+261 34 12 876 54" },
+            { nom: "Sage-Femme Fara", localisation: "Antananarivo, Ambohipotsy", telephone: "+261 32 45 678 90" },
+            { nom: "Sage-Femme Tahiry", localisation: "Antananarivo, Ankazomanga", telephone: "+261 33 22 345 78" },
+            { nom: "Sage-Femme Hery", localisation: "Antananarivo, Anjanahary", telephone: "+261 33 89 210 65" }
+        ];
+
+        function afficherSagesFemmes() {
+            const container = document.getElementById("sages-femmes-container");
+            container.innerHTML = "";
+            sagesFemmes.forEach((sageFemme) => {
+                const card = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-baby-carriage fa-2x mb-3"></i>
+                                <h3 class="card-title">${sageFemme.nom}</h3>
+                                <p class="card-text">${sageFemme.localisation}</p>
+                                <p class="card-text"><strong>Téléphone:</strong> ${sageFemme.telephone}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", afficherSagesFemmes);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

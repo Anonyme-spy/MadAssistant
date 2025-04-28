@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadAssistant - Professeurs Médicaux</title>
+    <link rel="stylesheet" href="autrecat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Liste des Professeurs Médicaux</h2>
+        <div id="medecins-list" class="row"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="medecinModal" tabindex="-1" aria-labelledby="medecinModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="medecinModalLabel">Détails du Professeur</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const medecins = [
+                {
+                    nom: "Prof. Rakoto Andry",
+                    localisation: "Antananarivo, Hôpital HJRA",
+                    clinique: "HJRA",
+                    retraite: false,
+                    telephone: "+261 34 12 345 67",
+                    instructions: "En cas d'urgence, appliquez les premiers soins et appelez immédiatement une ambulance."
+                },
+                {
+                    nom: "Prof. Rasoamanana Sophie",
+                    localisation: "Toamasina, Clinique Belle Vue",
+                    clinique: "Belle Vue",
+                    retraite: true,
+                    telephone: "+261 33 22 678 90",
+                    instructions: "Consultez un spécialiste en cas de douleurs persistantes."
+                }
+            ];
+
+            let medecinsList = document.getElementById("medecins-list");
+            medecins.forEach((medecin, index) => {
+                let card = document.createElement("div");
+                card.classList.add("col-md-4", "mb-4");
+                card.innerHTML = `
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">${medecin.nom}</h5>
+                            <p class="card-text">${medecin.localisation}</p>
+                            <button class="btn btn-primary" onclick="showDetails(${index})">Voir détails</button>
+                        </div>
+                    </div>
+                `;
+                medecinsList.appendChild(card);
+            });
+        });
+
+        function showDetails(index) {
+            const medecins = [
+                {
+                    nom: "Prof. Rakoto Andry",
+                    localisation: "Antananarivo, Hôpital HJRA",
+                    clinique: "HJRA",
+                    retraite: false,
+                    telephone: "+261 34 12 345 67",
+                    instructions: "En cas d'urgence, appliquez les premiers soins et appelez immédiatement une ambulance."
+                },
+                {
+                    nom: "Prof. Rasoamanana Sophie",
+                    localisation: "Toamasina, Clinique Belle Vue",
+                    clinique: "Belle Vue",
+                    retraite: true,
+                    telephone: "+261 33 22 678 90",
+                    instructions: "Consultez un spécialiste en cas de douleurs persistantes."
+                }
+            ];
+            
+            let medecin = medecins[index];
+            let modalBody = document.getElementById("modal-body-content");
+            modalBody.innerHTML = `
+                <p><strong>Nom:</strong> ${medecin.nom}</p>
+                <p><strong>Localisation:</strong> ${medecin.localisation}</p>
+                <p><strong>Clinique:</strong> ${medecin.clinique}</p>
+                <p><strong>À la retraite:</strong> ${medecin.retraite ? "Oui" : "Non"}</p>
+                <p><strong>Téléphone:</strong> ${medecin.telephone}</p>
+                <p><strong>Instructions:</strong> ${medecin.instructions}</p>
+            `;
+            
+            $('#medecinModal').modal('show');
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadAssistant - Pompiers</title>
+    <link rel="stylesheet" href="autre2cat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="logo-removebg-preview.png" alt="Logo MadAssistant" class="logo">
+                <h1 class="mb-0">MadAssistant</h1>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="catégo.html" class="nav-link text-white">Retour</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="pompiers" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Liste des casernes de pompiers à Antananarivo</h2>
+            <div class="row" id="pompiers-container">
+                <!-- Les casernes de pompiers seront affichées ici dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 MadAssistant. Tous droits réservés.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const pompiers = [
+            { nom: "Casernement Central", localisation: "Antananarivo, Analakely", telephone: "+261 34 12 345 01" },
+            { nom: "Caserne Anosy", localisation: "Antananarivo, Anosy", telephone: "+261 33 23 234 56" },
+            { nom: "Caserne Mahamasina", localisation: "Antananarivo, Mahamasina", telephone: "+261 32 45 678 90" },
+            { nom: "Caserne Ambohimanarina", localisation: "Antananarivo, Ambohimanarina", telephone: "+261 38 76 543 21" },
+            { nom: "Caserne Itaosy", localisation: "Antananarivo, Itaosy", telephone: "+261 34 98 765 43" },
+            { nom: "Caserne Andavamamba", localisation: "Antananarivo, Andavamamba", telephone: "+261 32 11 223 44" },
+            { nom: "Caserne Tanjombato", localisation: "Antananarivo, Tanjombato", telephone: "+261 33 45 678 21" },
+            { nom: "Caserne Ampefiloha", localisation: "Antananarivo, Ampefiloha", telephone: "+261 34 22 345 78" },
+            { nom: "Caserne Tsaralalàna", localisation: "Antananarivo, Tsaralalàna", telephone: "+261 38 65 432 19" },
+            { nom: "Caserne Mandroseza", localisation: "Antananarivo, Mandroseza", telephone: "+261 32 76 543 21" },
+            { nom: "Caserne Anjanahary", localisation: "Antananarivo, Anjanahary", telephone: "+261 33 89 210 65" },
+            { nom: "Caserne 67Ha", localisation: "Antananarivo, 67Ha", telephone: "+261 34 54 321 76" },
+            { nom: "Caserne Andohalo", localisation: "Antananarivo, Andohalo", telephone: "+261 34 12 876 54" },
+            { nom: "Caserne Ambohipotsy", localisation: "Antananarivo, Ambohipotsy", telephone: "+261 32 45 678 90" },
+            { nom: "Caserne Ankazomanga", localisation: "Antananarivo, Ankazomanga", telephone: "+261 33 22 345 78" }
+        ];
+
+        function afficherPompiers() {
+            const container = document.getElementById("pompiers-container");
+            container.innerHTML = "";
+            pompiers.forEach((pompier) => {
+                const card = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-fire-extinguisher fa-2x mb-3"></i>
+                                <h3 class="card-title">${pompier.nom}</h3>
+                                <p class="card-text">${pompier.localisation}</p>
+                                <p class="card-text"><strong>Téléphone:</strong> ${pompier.telephone}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", afficherPompiers);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
